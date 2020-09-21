@@ -1,3 +1,4 @@
+require 'pry'
 
 def nyc_pigeon_organizer(data)
   # write your code here!
@@ -10,6 +11,7 @@ def nyc_pigeon_organizer(data)
         if !final_array[name][key]
           !final_array[name][key] = []
         end
+        binding.pry
         final_array[name][key].push[inner_key.to_s]
         end
       end
